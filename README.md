@@ -21,7 +21,7 @@
 |  `docker container rm <container> <container> <container>`  |  Removes multiple containers  |  `docker rm <container> <container> <container>`  |
 |  `docker container stop <container>`  |  Stops a container  |  `docker stop <container>`  |
 |  `docker container exec <container>`  |  Executes a command inside the container  |  	`docker exec <container>`  |
-|  `docker container prune`  |  Deletes all containers  |  	`docker prune`  |
+|  `docker container prune`  |  Deletes all containers  |  	`docker container prune`  |
 |  `docker container logs -f <container>`  |  to follow the output of logs of a running container  |  	`docker logs -f <container>`  |
 |  `docker container pause <container>`  |  to pause a container without exiting or stoping it  |  `docker pause <container>`  |
 |  `docker container unpause <container>`  |  to unpause a paused container  |  `docker unpause <container>`  |
