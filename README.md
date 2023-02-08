@@ -30,6 +30,7 @@
 |  `docker container exec -it <container> bash`  |  to enter a container with new process(new terminal).  |  `docker exec -it <container> bash`  |
 |  `docker container kill <container>`  |  to kill a container after grace period.  |  `docker kill <container>`  |
 > For all of them container can be either the container id or the container name. Same for images
+##
 > If we pressed `Ctrl + c` in the attached container, the container will stop. If we want to attach to a container while making sure we don't close it from the other terminal we can specify to not attach STDIN with `--no-stdin` option. Or we can detach from attached container by hitting `Ctrl + p`, `Ctrl + q` to detach us from the STDOUT.
 --------------------------------------------------------------------------
 eg. 
