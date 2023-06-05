@@ -17,6 +17,7 @@
 |  `docker container run <image>`  |  Runs a container from an image  |  `docker run <image>`  |
 |  `docker container run -d <image>`  |  Runs a container from an image in detached mode  |  `docker run -d <image>`  |
 |  `docker container run -it <image>`  |  Runs a container from an image in interactive mode  |  `docker run -it <image>`  |
+|  `docker container run --name <container> <image>`  |  To give a name for the new container to be created  |  `docker run --name <container> <image>`  |
 |  `docker container rm <container>`  |  Removes a container  |  `docker rm <container>`  |
 |  `docker container rm <container> <container> <container>`  |  Removes multiple containers  |  `docker rm <container> <container> <container>`  |
 |  `docker container stop <container>`  |  Stops a container  |  `docker stop <container>`  |
@@ -31,6 +32,8 @@
 |  `docker container kill <container>`  |  to kill a container after grace period.  |  `docker kill <container>`  |
 |  `docker search <image>`  |  to search for images in the Docker Hub.  |  `docker search <image>`  |
 |  `docker container diff <container>`  |  to see the difference between container and the image it is made from.  |  `docker diff <container>`  |
+|  `docker commit <container> <new_image>`  |  to create new image from container with the changes made in the container.  |  `docker commit <container> <new_image>`  |
+|  `docker container cp <file> <container>:<path>`  |  to copy a file from host to container or vice versa.  |  eg. `docker container cp ./index.js hello-node:/usr/src/app/index.js` |
 > For all of them container can be either the container id or the container name. Same for images
 ##
 > If we pressed `Ctrl + c` in the attached container, the container will stop. If we want to attach to a container while making sure we don't close it from the other terminal we can specify to not attach STDIN with `--no-stdin` option. Or we can detach from attached container by hitting `Ctrl + p`, `Ctrl + q` to detach us from the STDOUT.
