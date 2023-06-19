@@ -17,6 +17,8 @@
 |  `docker container run <image>`  |  Runs a container from an image  |  `docker run <image>`  |
 |  `docker container run -d <image>`  |  Runs a container from an image in detached mode  |  `docker run -d <image>`  |
 |  `docker container run -it <image>`  |  Runs a container from an image in interactive mode  |  `docker run -it <image>`  |
+|  `docker container run -p <host_port>:<container_port> <image>`  |  Publish port of the host to container  |  `docker run -p <host_port>:<container_port> <image>`  |
+|  `docker container run -v <file/dir_host>:<file/dir_container> <image>`  |  Bind mount volume from host to container  |  `docker run -v <file/dir_host>:<file/dir_container> <image>`  |
 |  `docker container run --name <container> <image>`  |  To give a name for the new container to be created  |  `docker run --name <container> <image>`  |
 |  `docker container rm <container>`  |  Removes a container  |  `docker rm <container>`  |
 |  `docker container rm <container> <container> <container>`  |  Removes multiple containers  |  `docker rm <container> <container> <container>`  |
