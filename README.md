@@ -34,6 +34,7 @@
 |  `docker container diff <container>`  |  to see the difference between container and the image it is made from.  |  `docker diff <container>`  |
 |  `docker commit <container> <new_image>`  |  to create new image from container with the changes made in the container.  |  `docker commit <container> <new_image>`  |
 |  `docker container cp <file> <container>:<path>`  |  to copy a file from host to container or vice versa.  |  eg. `docker container cp ./index.js hello-node:/usr/src/app/index.js` |
+|  `docker compose -f <docker-compose.yml> up -d`  |  to specify custom docker compose yaml file.  |  eg. `docker compose -f docker-compose.dev.yml up -d` |
 > For all of them container can be either the container id or the container name. Same for images
 ##
 > If we pressed `Ctrl + c` in the attached container, the container will stop. If we want to attach to a container while making sure we don't close it from the other terminal we can specify to not attach STDIN with `--no-stdin` option. Or we can detach from attached container by hitting `Ctrl + p`, `Ctrl + q` to detach us from the STDOUT.
