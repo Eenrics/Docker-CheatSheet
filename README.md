@@ -59,7 +59,12 @@ docker unpause looper
 docker run -d --rm -it --name looper-it ubuntu sh -c 'while true; do date; sleep 1; done'
 ```
 > start another process with -it and add --rm in order to remove it automatically after it has exited. The --rm ensures that there are no garbage containers left behind. It also means that docker start can not be used to start the container after it has exited.
-		
+
+
+> for accessing services runing in the host local, we can use the ip adress of the host. To find the ip address, we can run
+```bash
+dr show docker0 | grep -Po 'inet \K[\d.]+'dr show docker0 | grep -Po 'inet \K[\d.]+'
+```
 		
 		
 		
